@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	font-family: 'roboto';
+    color: #1b404b;
+	line-height: 16px;
+	background-color: #F3F3F3;
+    min-width: 500px;
+    width: 500px;
+    min-height: 10px;
+    height: 200px;
+    margin: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.disabledActiveButton {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+
+.btn-default {
+	color: #0F92D5;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #05497a;
+	border-color: #0F79B9;
+}
+
+
+.block-text-centered {
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+.disabledButton {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+
+
+.margin-null {
+    margin: 0px;
+}
+
+.m-t-lg {
+    margin-top: 20px;
+}
+
+.m-t-md {
+    margin-top: 15px;
+}
+
+.m-b-md {
+	margin-bottom: 15px;
+}
+
+.m-r-md {
+    margin-right: 15px;
+}
+
+.m-l-md {
+    margin-left: 15px;
+}
+
+.m-b-s {
+	margin-bottom: 10px;
+}
+
+.m-t-s {
+    margin-top: 10px;
+}
+
+.m-t-xs {
+    margin-top: 5px;
+}
+
+.m-b-lg {
+    margin-bottom: 20px;
+}
+
+
+.center-text {
+    text-align: center;
+}
+
+
+.text-danger {
+    color: #d60101;
+}
+
+.btm {
+    bottom: 0px;
+}
+
+.m-b-none {
+    margin-bottom: 0;
+}
+

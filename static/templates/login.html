@@ -1,0 +1,35 @@
+ <div class="row">
+    <div class="col-lg-12">
+        <div ng-show="vm.success" class="alert alert-success alert-dismissible" role="alert">
+             <button type="button" class="close" ng-click="vm.success=false" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             Successful login!
+        </div>
+        <form ng-show="!vm.success" class="m-t" role="form" name="form" ng-submit="vm.login()" novalidate>
+            <div class="form-group" ng-hide="vm.danger">
+                 <div class="alert alert-danger alert-dismissible" role="alert">
+                     <button type="button" class="close" ng-click="vm.danger=true" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     {{vm.errorText}}
+                 </div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your username" required="" ng-model="vm.username" name="username">
+                <div ng-show="form.$submitted">
+                    <small class="text-danger help-block m-b-none text-left" ng-show="form.username.$error.required">
+                        Your username is required.
+                    </small>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Your password" required="" ng-model="vm.password" name="password">
+                <div ng-show="form.$submitted">
+                    <small class="text-danger help-block m-b-none text-left" ng-show="form.password.$error.required">
+                        Your password is required.
+                    </small>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary block full-width b" ng-disabled="vm.isSaving">{{vm.buttonText}}</button>
+            </div>
+        </form>
+    </div>
+ </div>
